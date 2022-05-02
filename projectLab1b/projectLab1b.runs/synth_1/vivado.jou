@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:14:06 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Tue Sep 21 02:06:57 2021
+# Process ID: 38092
+# Current directory: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/projectLab1b/projectLab1b.runs/synth_1
+# Command line: vivado.exe -log projectLab1b.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source projectLab1b.tcl
+# Log file: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/projectLab1b/projectLab1b.runs/synth_1/projectLab1b.vds
+# Journal file: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/projectLab1b/projectLab1b.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source projectLab1b.tcl -notrace

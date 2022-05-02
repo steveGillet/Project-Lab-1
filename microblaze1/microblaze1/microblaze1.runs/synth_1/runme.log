@@ -1,0 +1,520 @@
+
+*** Running vivado
+    with args -log microblaze1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source microblaze1.tcl
+
+
+
+****** Vivado v2020.2.2 (64-bit)
+  **** SW Build 3118627 on Tue Feb  9 05:14:06 MST 2021
+  **** IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source microblaze1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/steph/Downloads/vivado-library-master/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.cache/ip 
+Command: synth_design -top microblaze1 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7216
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1051.176 ; gain = 19.199
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'microblaze1' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:805]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_axi_gpio_0_2' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_axi_gpio_0_2' (1#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_axi_gpio_0_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_axi_gpio_0_0' (2#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_PmodCOLOR_0_1' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_PmodCOLOR_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_PmodCOLOR_0_1' (3#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_PmodCOLOR_0_1_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpio_interrupt' of module 'microblaze1_PmodCOLOR_0_1' is unconnected for instance 'PmodCOLOR_0' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:1139]
+WARNING: [Synth 8-7071] port 'iic_interrupt' of module 'microblaze1_PmodCOLOR_0_1' is unconnected for instance 'PmodCOLOR_0' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:1139]
+WARNING: [Synth 8-7023] instance 'PmodCOLOR_0' of module 'microblaze1_PmodCOLOR_0_1' has 62 connections declared, but only 60 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:1139]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_axi_uartlite_0_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_axi_uartlite_0_0' (4#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'microblaze1_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:1200]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'microblaze1_axi_uartlite_0_0' has 22 connections declared, but only 21 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:1200]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_clk_wiz_0_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_clk_wiz_0_0' (5#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_mdm_1_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_mdm_1_0' (6#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_microblaze_0_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_microblaze_0_0' (7#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_microblaze_0_axi_intc_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_microblaze_0_axi_intc_0' (8#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_microblaze_0_axi_periph_0' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:1494]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_3PWYND' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_3PWYND' (9#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_14PBMK7' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_14PBMK7' (10#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1SU35LG' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1SU35LG' (11#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:276]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_WVAPHM' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:408]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_WVAPHM' (12#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:408]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_8RB842' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:540]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_8RB842' (13#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:540]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_ZLI898' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:672]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_ZLI898' (14#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:672]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1QJL2M1' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2690]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1QJL2M1' (15#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2690]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_xbar_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_xbar_0' (16#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'microblaze1_xbar_0' is unconnected for instance 'xbar' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2415]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'microblaze1_xbar_0' is unconnected for instance 'xbar' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2415]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'microblaze1_xbar_0' has 40 connections declared, but only 38 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2415]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_microblaze_0_axi_periph_0' (17#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:1494]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1TWN2RC' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2456]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_dlmb_bram_if_cntlr_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_dlmb_bram_if_cntlr_0' (18#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_dlmb_v10_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_dlmb_v10_0' (19#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'microblaze1_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2602]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'microblaze1_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2602]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_ilmb_bram_if_cntlr_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_ilmb_bram_if_cntlr_0' (20#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_ilmb_v10_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_ilmb_v10_0' (21#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'microblaze1_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2648]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'microblaze1_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2648]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_lmb_bram_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_lmb_bram_0' (22#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'microblaze1_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2673]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'microblaze1_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2673]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'microblaze1_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2673]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1TWN2RC' (23#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:2456]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_microblaze_0_xlconcat_0' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_xlconcat_0/synth/microblaze1_microblaze_0_xlconcat_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 1 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 2 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (24#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_microblaze_0_xlconcat_0' (25#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_xlconcat_0/synth/microblaze1_microblaze_0_xlconcat_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'microblaze1_rst_clk_wiz_0_100M_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1_rst_clk_wiz_0_100M_0' (26#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/.Xil/Vivado-22684-LAPTOP-1ENOPNGD/realtime/microblaze1_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'microblaze1_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:1483]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'microblaze1_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:1483]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'microblaze1_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 8 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:1483]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze1' (27#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/synth/microblaze1.v:805]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1110.594 ; gain = 78.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1110.594 ; gain = 78.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1110.594 ; gain = 78.617
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1110.594 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0_in_context.xdc] for cell 'clk_wiz_0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0_in_context.xdc] for cell 'clk_wiz_0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_0/microblaze1_microblaze_0_0/microblaze1_microblaze_0_0_in_context.xdc] for cell 'microblaze_0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_0/microblaze1_microblaze_0_0/microblaze1_microblaze_0_0_in_context.xdc] for cell 'microblaze_0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_dlmb_v10_0/microblaze1_dlmb_v10_0/microblaze1_dlmb_v10_0_in_context.xdc] for cell 'microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_dlmb_v10_0/microblaze1_dlmb_v10_0/microblaze1_dlmb_v10_0_in_context.xdc] for cell 'microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_ilmb_v10_0/microblaze1_ilmb_v10_0/microblaze1_dlmb_v10_0_in_context.xdc] for cell 'microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_ilmb_v10_0/microblaze1_ilmb_v10_0/microblaze1_dlmb_v10_0_in_context.xdc] for cell 'microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_dlmb_bram_if_cntlr_0/microblaze1_dlmb_bram_if_cntlr_0/microblaze1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_dlmb_bram_if_cntlr_0/microblaze1_dlmb_bram_if_cntlr_0/microblaze1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_ilmb_bram_if_cntlr_0/microblaze1_ilmb_bram_if_cntlr_0/microblaze1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_ilmb_bram_if_cntlr_0/microblaze1_ilmb_bram_if_cntlr_0/microblaze1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_lmb_bram_0/microblaze1_lmb_bram_0/microblaze1_lmb_bram_0_in_context.xdc] for cell 'microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_lmb_bram_0/microblaze1_lmb_bram_0/microblaze1_lmb_bram_0_in_context.xdc] for cell 'microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_xbar_0/microblaze1_xbar_0/microblaze1_xbar_0_in_context.xdc] for cell 'microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_xbar_0/microblaze1_xbar_0/microblaze1_xbar_0_in_context.xdc] for cell 'microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_axi_intc_0/microblaze1_microblaze_0_axi_intc_0/microblaze1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_axi_intc_0/microblaze1_microblaze_0_axi_intc_0/microblaze1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_mdm_1_0/microblaze1_mdm_1_0/microblaze1_mdm_1_0_in_context.xdc] for cell 'mdm_1'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_mdm_1_0/microblaze1_mdm_1_0/microblaze1_mdm_1_0_in_context.xdc] for cell 'mdm_1'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_rst_clk_wiz_0_100M_0/microblaze1_rst_clk_wiz_0_100M_0/microblaze1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_rst_clk_wiz_0_100M_0/microblaze1_rst_clk_wiz_0_100M_0/microblaze1_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'rst_clk_wiz_0_100M'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_uartlite_0_0/microblaze1_axi_uartlite_0_0/microblaze1_axi_uartlite_0_0_in_context.xdc] for cell 'axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_uartlite_0_0/microblaze1_axi_uartlite_0_0/microblaze1_axi_uartlite_0_0_in_context.xdc] for cell 'axi_uartlite_0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_0/microblaze1_axi_gpio_0_0/microblaze1_axi_gpio_0_0_in_context.xdc] for cell 'AXI_GPIO_LED'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_0/microblaze1_axi_gpio_0_0/microblaze1_axi_gpio_0_0_in_context.xdc] for cell 'AXI_GPIO_LED'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_2/microblaze1_axi_gpio_0_2/microblaze1_axi_gpio_0_2_in_context.xdc] for cell 'AXI_GPIO_BUTTONS'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_2/microblaze1_axi_gpio_0_2/microblaze1_axi_gpio_0_2_in_context.xdc] for cell 'AXI_GPIO_BUTTONS'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1_in_context.xdc] for cell 'PmodCOLOR_0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1_in_context.xdc] for cell 'PmodCOLOR_0'
+Parsing XDC File [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[0]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[0]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[1]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[1]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[2]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[2]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[3]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[3]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin1_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin1_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin2_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin2_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin3_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin3_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin4_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin4_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin7_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin7_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin8_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin8_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin9_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin9_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin10_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'ja_pin10_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'jb_1_pin1_io'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'jb_1_pin1_io'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'jb_1_pin2_io'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'jb_1_pin2_io'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'jb_1_pin3_io'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:160]
+CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command 'set_property IOSTANDARD LVCMOS33 [get_ports {jb_1_pin3_io]
+#Sch name = JB4
+set_property PACKAGE_PIN B16 [get_ports {jb_1_pin4_io}]
+set_property IOSTANDARD LVCMOS33 [get_ports {jb_1_pin4_io}]
+#Sch name ... (truncated) ' found in constraint file. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:161]
+Finished Parsing XDC File [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/microblaze1_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/microblaze1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/microblaze1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1146.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1146.102 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1150.074 ; gain = 118.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1150.074 ; gain = 118.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_GPIO_LED. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for AXI_GPIO_BUTTONS. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for PmodCOLOR_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1150.074 ; gain = 118.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1150.074 ; gain = 118.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1150.074 ; gain = 118.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1190.234 ; gain = 158.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1190.680 ; gain = 158.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1209.742 ; gain = 177.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1216.484 ; gain = 184.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1216.484 ; gain = 184.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1216.484 ; gain = 184.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1216.484 ; gain = 184.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1216.484 ; gain = 184.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1216.484 ; gain = 184.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |microblaze1_xbar_0                  |         1|
+|2     |microblaze1_axi_gpio_0_2            |         1|
+|3     |microblaze1_axi_gpio_0_0            |         1|
+|4     |microblaze1_PmodCOLOR_0_1           |         1|
+|5     |microblaze1_axi_uartlite_0_0        |         1|
+|6     |microblaze1_clk_wiz_0_0             |         1|
+|7     |microblaze1_mdm_1_0                 |         1|
+|8     |microblaze1_microblaze_0_0          |         1|
+|9     |microblaze1_microblaze_0_axi_intc_0 |         1|
+|10    |microblaze1_rst_clk_wiz_0_100M_0    |         1|
+|11    |microblaze1_dlmb_bram_if_cntlr_0    |         1|
+|12    |microblaze1_dlmb_v10_0              |         1|
+|13    |microblaze1_ilmb_bram_if_cntlr_0    |         1|
+|14    |microblaze1_ilmb_v10_0              |         1|
+|15    |microblaze1_lmb_bram_0              |         1|
++------+------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |microblaze1_PmodCOLOR_0           |     1|
+|2     |microblaze1_axi_gpio_0            |     2|
+|4     |microblaze1_axi_uartlite_0        |     1|
+|5     |microblaze1_clk_wiz_0             |     1|
+|6     |microblaze1_dlmb_bram_if_cntlr    |     1|
+|7     |microblaze1_dlmb_v10              |     1|
+|8     |microblaze1_ilmb_bram_if_cntlr    |     1|
+|9     |microblaze1_ilmb_v10              |     1|
+|10    |microblaze1_lmb_bram              |     1|
+|11    |microblaze1_mdm_1                 |     1|
+|12    |microblaze1_microblaze_0          |     1|
+|13    |microblaze1_microblaze_0_axi_intc |     1|
+|14    |microblaze1_rst_clk_wiz_0_100M    |     1|
+|15    |microblaze1_xbar                  |     1|
+|16    |IBUF                              |    14|
+|17    |OBUF                              |    41|
++------+----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1216.484 ; gain = 184.508
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1216.484 ; gain = 145.027
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1216.484 ; gain = 184.508
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1228.543 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1234.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 50 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1234.035 ; gain = 202.059
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/synth_1/microblaze1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file microblaze1_utilization_synth.rpt -pb microblaze1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 27 18:31:10 2021...

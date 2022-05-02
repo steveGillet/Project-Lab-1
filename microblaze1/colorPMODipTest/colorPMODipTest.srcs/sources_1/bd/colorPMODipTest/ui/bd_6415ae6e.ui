@@ -1,0 +1,54 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.10598",
+   "Default View_TopLeft":"1585,-20",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port usb_uart -pg 1 -lvl 7 -x 1970 -y 380 -defaultsOSRD
+preplace port jb -pg 1 -lvl 7 -x 1970 -y 220 -defaultsOSRD
+preplace port led_16bits -pg 1 -lvl 7 -x 1970 -y 0 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x 0 -y 450 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 4 -x 1080 -y 430 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 110 -y 440 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 5 -x 1490 -y 510 -defaultsOSRD
+preplace inst microblaze_0_axi_periph -pg 1 -lvl 5 -x 1490 -y 210 -defaultsOSRD
+preplace inst microblaze_0_axi_intc -pg 1 -lvl 3 -x 710 -y 250 -defaultsOSRD
+preplace inst microblaze_0_xlconcat -pg 1 -lvl 2 -x 390 -y 260 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 3 -x 710 -y 430 -defaultsOSRD
+preplace inst rst_clk_wiz_0_100M -pg 1 -lvl 2 -x 390 -y 410 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 6 -x 1810 -y 390 -defaultsOSRD
+preplace inst PmodCOLOR_0 -pg 1 -lvl 6 -x 1810 -y 240 -defaultsOSRD
+preplace inst axi_gpio_led -pg 1 -lvl 6 -x 1810 -y 90 -defaultsOSRD
+preplace netloc sys_clock_1 1 0 1 NJ 450
+preplace netloc reset_1 1 0 2 20 370 200
+preplace netloc microblaze_0_intr 1 2 1 NJ 260
+preplace netloc microblaze_0_Clk 1 1 5 210 520 570 520 840 520 1320 -10 1670
+preplace netloc clk_wiz_0_locked 1 1 1 N 450
+preplace netloc rst_clk_wiz_0_100M_mb_reset 1 2 2 590 500 850J
+preplace netloc rst_clk_wiz_0_100M_bus_struct_reset 1 2 3 560 540 NJ 540 NJ
+preplace netloc rst_clk_wiz_0_100M_peripheral_aresetn 1 2 4 580 360 830J 340 1350 10 1640
+preplace netloc mdm_1_debug_sys_rst 1 1 3 220 510 NJ 510 830
+preplace netloc microblaze_0_axi_periph_M04_AXI 1 5 1 1660 70n
+preplace netloc PmodCOLOR_0_Pmod_out 1 6 1 NJ 220
+preplace netloc microblaze_0_interrupt 1 3 1 850 250n
+preplace netloc microblaze_0_axi_dp 1 4 1 1340 70n
+preplace netloc microblaze_0_debug 1 3 1 N 420
+preplace netloc microblaze_0_intc_axi 1 2 4 590 0 NJ 0 NJ 0 1630
+preplace netloc microblaze_0_axi_periph_M01_AXI 1 5 1 1650 190n
+preplace netloc microblaze_0_dlmb_1 1 4 1 1330 410n
+preplace netloc microblaze_0_ilmb_1 1 4 1 1310 430n
+preplace netloc axi_uartlite_0_UART 1 6 1 NJ 380
+preplace netloc microblaze_0_axi_periph_M03_AXI 1 5 1 N 230
+preplace netloc microblaze_0_axi_periph_M02_AXI 1 5 1 N 210
+preplace netloc axi_gpio_led_GPIO 1 6 1 1950 0n
+levelinfo -pg 1 0 110 390 710 1080 1490 1810 1970
+pagesize -pg 1 -db -bbox -sgen -110 -20 2090 590
+"
+}
+{
+   "da_axi4_cnt":"4",
+   "da_board_cnt":"1",
+   "da_mb_cnt":"1"
+}

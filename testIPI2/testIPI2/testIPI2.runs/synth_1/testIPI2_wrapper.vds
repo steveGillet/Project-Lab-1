@@ -1,0 +1,333 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:14:06 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Fri Oct 15 11:40:59 2021
+# Process ID: 68520
+# Current directory: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1
+# Command line: vivado.exe -log testIPI2_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source testIPI2_wrapper.tcl
+# Log file: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/testIPI2_wrapper.vds
+# Journal file: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source testIPI2_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top testIPI2_wrapper -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 63152
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1027.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_wrapper' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/hdl/testIPI2_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:789]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_axi_gpio_0_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_axi_gpio_0_0' (1#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_axi_gpio_1_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_axi_gpio_1_0' (2#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_axi_uartlite_0_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_axi_uartlite_0_0' (3#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_axi_uartlite_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'testIPI2_axi_uartlite_0_0' is unconnected for instance 'axi_uartlite_0' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:968]
+WARNING: [Synth 8-7023] instance 'axi_uartlite_0' of module 'testIPI2_axi_uartlite_0_0' has 22 connections declared, but only 21 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:968]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_clk_wiz_0_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_clk_wiz_0_0' (4#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_mdm_1_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_mdm_1_0' (5#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_microblaze_0_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_microblaze_0_0' (6#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'Interrupt_Ack' of module 'testIPI2_microblaze_0_0' is unconnected for instance 'microblaze_0' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:1008]
+WARNING: [Synth 8-7023] instance 'microblaze_0' of module 'testIPI2_microblaze_0_0' has 52 connections declared, but only 51 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:1008]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_microblaze_0_axi_periph_0' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:1177]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_4OGCZI' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_4OGCZI' (7#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1YWQPGF' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1YWQPGF' (8#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:144]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_5U4BP9' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:276]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_5U4BP9' (9#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:276]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1SW97GC' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:642]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1SW97GC' (10#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:642]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_xbar_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_xbar_0' (11#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'testIPI2_xbar_0' is unconnected for instance 'xbar' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:1714]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'testIPI2_xbar_0' is unconnected for instance 'xbar' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:1714]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'testIPI2_xbar_0' has 40 connections declared, but only 38 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:1714]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_microblaze_0_axi_periph_0' (12#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:1177]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1J4CVZU' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:408]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_dlmb_bram_if_cntlr_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_dlmb_bram_if_cntlr_0' (13#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_dlmb_v10_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_dlmb_v10_0' (14#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'testIPI2_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:554]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'testIPI2_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:554]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_ilmb_bram_if_cntlr_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_ilmb_bram_if_cntlr_0' (15#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_ilmb_v10_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_ilmb_v10_0' (16#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'testIPI2_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:600]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'testIPI2_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:600]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_lmb_bram_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_lmb_bram_0' (17#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'testIPI2_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:625]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'testIPI2_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:625]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'testIPI2_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:625]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1J4CVZU' (18#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:408]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_reset_inv_0_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_reset_inv_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_reset_inv_0_0' (19#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_reset_inv_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'testIPI2_rst_clk_wiz_0_100M_0' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_rst_clk_wiz_0_100M_0' (20#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/.Xil/Vivado-68520-LAPTOP-1ENOPNGD/realtime/testIPI2_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'testIPI2_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:1166]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'testIPI2_rst_clk_wiz_0_100M_0' is unconnected for instance 'rst_clk_wiz_0_100M' [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:1166]
+WARNING: [Synth 8-7023] instance 'rst_clk_wiz_0_100M' of module 'testIPI2_rst_clk_wiz_0_100M_0' has 10 connections declared, but only 8 given [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:1166]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2' (21#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/synth/testIPI2.v:789]
+INFO: [Synth 8-6155] done synthesizing module 'testIPI2_wrapper' (22#1) [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/hdl/testIPI2_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.891 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1027.891 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_axi_gpio_0_0/testIPI2_axi_gpio_0_0/testIPI2_axi_gpio_0_0_in_context.xdc] for cell 'testIPI2_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_axi_gpio_0_0/testIPI2_axi_gpio_0_0/testIPI2_axi_gpio_0_0_in_context.xdc] for cell 'testIPI2_i/axi_gpio_0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_axi_gpio_1_0/testIPI2_axi_gpio_1_0/testIPI2_axi_gpio_1_0_in_context.xdc] for cell 'testIPI2_i/axi_gpio_1'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_axi_gpio_1_0/testIPI2_axi_gpio_1_0/testIPI2_axi_gpio_1_0_in_context.xdc] for cell 'testIPI2_i/axi_gpio_1'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_clk_wiz_0_0/testIPI2_clk_wiz_0_0/testIPI2_clk_wiz_0_0_in_context.xdc] for cell 'testIPI2_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_clk_wiz_0_0/testIPI2_clk_wiz_0_0/testIPI2_clk_wiz_0_0_in_context.xdc] for cell 'testIPI2_i/clk_wiz_0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_axi_uartlite_0_0/testIPI2_axi_uartlite_0_0/testIPI2_axi_uartlite_0_0_in_context.xdc] for cell 'testIPI2_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_axi_uartlite_0_0/testIPI2_axi_uartlite_0_0/testIPI2_axi_uartlite_0_0_in_context.xdc] for cell 'testIPI2_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_reset_inv_0_0/testIPI2_reset_inv_0_0/testIPI2_reset_inv_0_0_in_context.xdc] for cell 'testIPI2_i/reset_inv_0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_reset_inv_0_0/testIPI2_reset_inv_0_0/testIPI2_reset_inv_0_0_in_context.xdc] for cell 'testIPI2_i/reset_inv_0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_microblaze_0_0/testIPI2_microblaze_0_0/testIPI2_microblaze_0_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_microblaze_0_0/testIPI2_microblaze_0_0/testIPI2_microblaze_0_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_dlmb_v10_0/testIPI2_dlmb_v10_0/testIPI2_ilmb_v10_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_dlmb_v10_0/testIPI2_dlmb_v10_0/testIPI2_ilmb_v10_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_ilmb_v10_0/testIPI2_ilmb_v10_0/testIPI2_ilmb_v10_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_ilmb_v10_0/testIPI2_ilmb_v10_0/testIPI2_ilmb_v10_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_dlmb_bram_if_cntlr_0/testIPI2_dlmb_bram_if_cntlr_0/testIPI2_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_dlmb_bram_if_cntlr_0/testIPI2_dlmb_bram_if_cntlr_0/testIPI2_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_ilmb_bram_if_cntlr_0/testIPI2_ilmb_bram_if_cntlr_0/testIPI2_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_ilmb_bram_if_cntlr_0/testIPI2_ilmb_bram_if_cntlr_0/testIPI2_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_lmb_bram_0/testIPI2_lmb_bram_0/testIPI2_lmb_bram_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_lmb_bram_0/testIPI2_lmb_bram_0/testIPI2_lmb_bram_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_mdm_1_0/testIPI2_mdm_1_0/testIPI2_mdm_1_0_in_context.xdc] for cell 'testIPI2_i/mdm_1'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_mdm_1_0/testIPI2_mdm_1_0/testIPI2_mdm_1_0_in_context.xdc] for cell 'testIPI2_i/mdm_1'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_rst_clk_wiz_0_100M_0/testIPI2_rst_clk_wiz_0_100M_0/testIPI2_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'testIPI2_i/rst_clk_wiz_0_100M'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_rst_clk_wiz_0_100M_0/testIPI2_rst_clk_wiz_0_100M_0/testIPI2_rst_clk_wiz_0_100M_0_in_context.xdc] for cell 'testIPI2_i/rst_clk_wiz_0_100M'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_xbar_0/testIPI2_xbar_0/testIPI2_xbar_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_xbar_0/testIPI2_xbar_0/testIPI2_xbar_0_in_context.xdc] for cell 'testIPI2_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1051.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1051.934 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'testIPI2_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1060.020 ; gain = 32.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1060.020 ; gain = 32.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_clk_wiz_0_0/testIPI2_clk_wiz_0_0/testIPI2_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.gen/sources_1/bd/testIPI2/ip/testIPI2_clk_wiz_0_0/testIPI2_clk_wiz_0_0/testIPI2_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/reset_inv_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for testIPI2_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1060.020 ; gain = 32.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1060.020 ; gain = 32.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1060.020 ; gain = 32.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1082.207 ; gain = 54.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1082.504 ; gain = 54.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1101.555 ; gain = 73.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1108.395 ; gain = 80.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1108.395 ; gain = 80.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1108.395 ; gain = 80.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1108.395 ; gain = 80.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1108.395 ; gain = 80.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1108.395 ; gain = 80.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------+----------+
+|      |BlackBox name                 |Instances |
++------+------------------------------+----------+
+|1     |testIPI2_xbar_0               |         1|
+|2     |testIPI2_axi_gpio_0_0         |         1|
+|3     |testIPI2_axi_gpio_1_0         |         1|
+|4     |testIPI2_axi_uartlite_0_0     |         1|
+|5     |testIPI2_clk_wiz_0_0          |         1|
+|6     |testIPI2_mdm_1_0              |         1|
+|7     |testIPI2_microblaze_0_0       |         1|
+|8     |testIPI2_reset_inv_0_0        |         1|
+|9     |testIPI2_rst_clk_wiz_0_100M_0 |         1|
+|10    |testIPI2_dlmb_bram_if_cntlr_0 |         1|
+|11    |testIPI2_dlmb_v10_0           |         1|
+|12    |testIPI2_ilmb_bram_if_cntlr_0 |         1|
+|13    |testIPI2_ilmb_v10_0           |         1|
+|14    |testIPI2_lmb_bram_0           |         1|
++------+------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------+------+
+|      |Cell                        |Count |
++------+----------------------------+------+
+|1     |testIPI2_axi_gpio_0         |     1|
+|2     |testIPI2_axi_gpio_1         |     1|
+|3     |testIPI2_axi_uartlite_0     |     1|
+|4     |testIPI2_clk_wiz_0          |     1|
+|5     |testIPI2_dlmb_bram_if_cntlr |     1|
+|6     |testIPI2_dlmb_v10           |     1|
+|7     |testIPI2_ilmb_bram_if_cntlr |     1|
+|8     |testIPI2_ilmb_v10           |     1|
+|9     |testIPI2_lmb_bram           |     1|
+|10    |testIPI2_mdm_1              |     1|
+|11    |testIPI2_microblaze_0       |     1|
+|12    |testIPI2_reset_inv_0        |     1|
+|13    |testIPI2_rst_clk_wiz_0_100M |     1|
+|14    |testIPI2_xbar               |     1|
+|15    |IBUF                        |     6|
+|16    |OBUF                        |    17|
++------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1108.395 ; gain = 80.504
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1108.395 ; gain = 48.375
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1108.395 ; gain = 80.504
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1120.453 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1122.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1122.977 ; gain = 95.086
+INFO: [Common 17-1381] The checkpoint 'C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/testIPI2/testIPI2/testIPI2.runs/synth_1/testIPI2_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file testIPI2_wrapper_utilization_synth.rpt -pb testIPI2_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 15 11:41:33 2021...

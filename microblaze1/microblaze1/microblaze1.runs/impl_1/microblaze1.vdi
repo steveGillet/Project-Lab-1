@@ -1,0 +1,509 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:14:06 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Wed Oct 27 18:31:18 2021
+# Process ID: 23312
+# Current directory: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/impl_1
+# Command line: vivado.exe -log microblaze1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source microblaze1.tcl -notrace
+# Log file: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/impl_1/microblaze1.vdi
+# Journal file: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source microblaze1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/steph/Downloads/vivado-library-master/vivado-library-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.cache/ip 
+Command: link_design -top microblaze1 -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_2/microblaze1_axi_gpio_0_2.dcp' for cell 'AXI_GPIO_BUTTONS'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_0/microblaze1_axi_gpio_0_0.dcp' for cell 'AXI_GPIO_LED'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1.dcp' for cell 'PmodCOLOR_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_uartlite_0_0/microblaze1_axi_uartlite_0_0.dcp' for cell 'axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0.dcp' for cell 'clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_mdm_1_0/microblaze1_mdm_1_0.dcp' for cell 'mdm_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_0/microblaze1_microblaze_0_0.dcp' for cell 'microblaze_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_axi_intc_0/microblaze1_microblaze_0_axi_intc_0.dcp' for cell 'microblaze_0_axi_intc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_rst_clk_wiz_0_100M_0/microblaze1_rst_clk_wiz_0_100M_0.dcp' for cell 'rst_clk_wiz_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_xbar_0/microblaze1_xbar_0.dcp' for cell 'microblaze_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_dlmb_bram_if_cntlr_0/microblaze1_dlmb_bram_if_cntlr_0.dcp' for cell 'microblaze_0_local_memory/dlmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_dlmb_v10_0/microblaze1_dlmb_v10_0.dcp' for cell 'microblaze_0_local_memory/dlmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_ilmb_bram_if_cntlr_0/microblaze1_ilmb_bram_if_cntlr_0.dcp' for cell 'microblaze_0_local_memory/ilmb_bram_if_cntlr'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_ilmb_v10_0/microblaze1_ilmb_v10_0.dcp' for cell 'microblaze_0_local_memory/ilmb_v10'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_lmb_bram_0/microblaze1_lmb_bram_0.dcp' for cell 'microblaze_0_local_memory/lmb_bram'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.208 . Memory (MB): peak = 1031.863 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 297 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0_board.xdc] for cell 'clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0_board.xdc] for cell 'clk_wiz_0/inst'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0.xdc] for cell 'clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1551.949 ; gain = 520.086
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_clk_wiz_0_0/microblaze1_clk_wiz_0_0.xdc] for cell 'clk_wiz_0/inst'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_0/microblaze1_microblaze_0_0.xdc] for cell 'microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_0/microblaze1_microblaze_0_0.xdc] for cell 'microblaze_0/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_axi_intc_0/microblaze1_microblaze_0_axi_intc_0.xdc] for cell 'microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_axi_intc_0/microblaze1_microblaze_0_axi_intc_0.xdc] for cell 'microblaze_0_axi_intc/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_mdm_1_0/microblaze1_mdm_1_0.xdc] for cell 'mdm_1/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_mdm_1_0/microblaze1_mdm_1_0.xdc] for cell 'mdm_1/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_rst_clk_wiz_0_100M_0/microblaze1_rst_clk_wiz_0_100M_0_board.xdc] for cell 'rst_clk_wiz_0_100M/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_rst_clk_wiz_0_100M_0/microblaze1_rst_clk_wiz_0_100M_0_board.xdc] for cell 'rst_clk_wiz_0_100M/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_rst_clk_wiz_0_100M_0/microblaze1_rst_clk_wiz_0_100M_0.xdc] for cell 'rst_clk_wiz_0_100M/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_rst_clk_wiz_0_100M_0/microblaze1_rst_clk_wiz_0_100M_0.xdc] for cell 'rst_clk_wiz_0_100M/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_uartlite_0_0/microblaze1_axi_uartlite_0_0_board.xdc] for cell 'axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_uartlite_0_0/microblaze1_axi_uartlite_0_0_board.xdc] for cell 'axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_uartlite_0_0/microblaze1_axi_uartlite_0_0.xdc] for cell 'axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_uartlite_0_0/microblaze1_axi_uartlite_0_0.xdc] for cell 'axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_0/microblaze1_axi_gpio_0_0_board.xdc] for cell 'AXI_GPIO_LED/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_0/microblaze1_axi_gpio_0_0_board.xdc] for cell 'AXI_GPIO_LED/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_0/microblaze1_axi_gpio_0_0.xdc] for cell 'AXI_GPIO_LED/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_0/microblaze1_axi_gpio_0_0.xdc] for cell 'AXI_GPIO_LED/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_2/microblaze1_axi_gpio_0_2_board.xdc] for cell 'AXI_GPIO_BUTTONS/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_2/microblaze1_axi_gpio_0_2_board.xdc] for cell 'AXI_GPIO_BUTTONS/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_2/microblaze1_axi_gpio_0_2.xdc] for cell 'AXI_GPIO_BUTTONS/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_axi_gpio_0_2/microblaze1_axi_gpio_0_2.xdc] for cell 'AXI_GPIO_BUTTONS/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/src/PmodCOLOR_pmod_bridge_0_0/PmodCOLOR_pmod_bridge_0_0_board.xdc] for cell 'PmodCOLOR_0/inst/pmod_bridge_0/inst'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/src/PmodCOLOR_pmod_bridge_0_0/PmodCOLOR_pmod_bridge_0_0_board.xdc] for cell 'PmodCOLOR_0/inst/pmod_bridge_0/inst'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/src/PmodCOLOR_axi_gpio_0_0/PmodCOLOR_axi_gpio_0_0_board.xdc] for cell 'PmodCOLOR_0/inst/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/src/PmodCOLOR_axi_gpio_0_0/PmodCOLOR_axi_gpio_0_0_board.xdc] for cell 'PmodCOLOR_0/inst/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/src/PmodCOLOR_axi_gpio_0_0/PmodCOLOR_axi_gpio_0_0.xdc] for cell 'PmodCOLOR_0/inst/axi_gpio_0/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/src/PmodCOLOR_axi_gpio_0_0/PmodCOLOR_axi_gpio_0_0.xdc] for cell 'PmodCOLOR_0/inst/axi_gpio_0/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/src/PmodCOLOR_axi_iic_0_0/PmodCOLOR_axi_iic_0_0_board.xdc] for cell 'PmodCOLOR_0/inst/axi_iic_0/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/src/PmodCOLOR_axi_iic_0_0/PmodCOLOR_axi_iic_0_0_board.xdc] for cell 'PmodCOLOR_0/inst/axi_iic_0/U0'
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1_board.xdc] for cell 'PmodCOLOR_0/inst'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1_board.xdc:9]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1_board.xdc:10]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1_board.xdc:11]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1_board.xdc:12]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_PmodCOLOR_0_1/microblaze1_PmodCOLOR_0_1_board.xdc] for cell 'PmodCOLOR_0/inst'
+Parsing XDC File [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[0]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[0]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[1]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[1]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[2]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[2]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[3]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn_tri_tio[3]'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin1_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin1_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin2_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:129]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin2_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin3_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin3_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin4_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin4_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin7_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin7_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin8_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin8_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin9_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin9_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin10_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja_pin10_tio'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_1_pin1_io'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_1_pin1_io'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_1_pin2_io'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_1_pin2_io'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb_1_pin3_io'. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command 'set_property IOSTANDARD LVCMOS33 [get_ports {jb_1_pin3_io]
+#Sch name = JB4
+set_property PACKAGE_PIN B16 [get_ports {jb_1_pin4_io}]
+set_property IOSTANDARD LVCMOS33 [get_ports {jb_1_pin4_io}]
+#Sch name ... (truncated) ' found in constraint file. [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc:161]
+Finished Parsing XDC File [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.srcs/constrs_1/imports/digilent-xdc-master/Basys-3-Master.xdc]
+Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_axi_intc_0/microblaze1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'microblaze_0_axi_intc/U0'
+Finished Parsing XDC File [c:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.gen/sources_1/bd/microblaze1/ip/microblaze1_microblaze_0_axi_intc_0/microblaze1_microblaze_0_axi_intc_0_clocks.xdc] for cell 'microblaze_0_axi_intc/U0'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'microblaze1'...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1551.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 80 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
+
+27 Infos, 30 Warnings, 34 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1551.949 ; gain = 520.086
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.927 . Memory (MB): peak = 1551.949 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: ee4454fe
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.208 . Memory (MB): peak = 1571.961 ; gain = 20.012
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1287e2261
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.293 . Memory (MB): peak = 1780.551 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 128 cells and removed 209 cells
+INFO: [Opt 31-1021] In phase Retarget, 9 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: b8a79094
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.331 . Memory (MB): peak = 1780.551 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 7 cells and removed 39 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 143e0a00d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.558 . Memory (MB): peak = 1780.551 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 24 cells and removed 80 cells
+INFO: [Opt 31-1021] In phase Sweep, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 40 load(s) on clock net mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: ed26a69e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.645 . Memory (MB): peak = 1780.551 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: ed26a69e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.658 . Memory (MB): peak = 1780.551 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: b6997574
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.681 . Memory (MB): peak = 1780.551 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             128  |             209  |                                              9  |
+|  Constant propagation         |               7  |              39  |                                              1  |
+|  Sweep                        |              24  |              80  |                                              1  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              1  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1780.551 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 14ce927ab
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.815 . Memory (MB): peak = 1780.551 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 8 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 16
+Ending PowerOpt Patch Enables Task | Checksum: 14ce927ab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1885.418 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 14ce927ab
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1885.418 ; gain = 104.867
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 14ce927ab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1885.418 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1885.418 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 14ce927ab
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1885.418 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+55 Infos, 30 Warnings, 34 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1885.418 ; gain = 333.469
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1885.418 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/impl_1/microblaze1_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file microblaze1_drc_opted.rpt -pb microblaze1_drc_opted.pb -rpx microblaze1_drc_opted.rpx
+Command: report_drc -file microblaze1_drc_opted.rpt -pb microblaze1_drc_opted.pb -rpx microblaze1_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/microblaze1/microblaze1/microblaze1.runs/impl_1/microblaze1_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1885.418 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: ad3c37bf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1885.418 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1885.418 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (8) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 8 sites.
+	Term: btn_tri_i[0]
+	Term: btn_tri_i[1]
+	Term: btn_tri_i[2]
+	Term: btn_tri_i[3]
+	Term: ja_pin1_i
+	Term: ja_pin2_i
+	Term: ja_pin3_i
+	Term: ja_pin4_i
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (20) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 8 sites.
+	Term: btn_tri_i[0]
+	Term: btn_tri_i[1]
+	Term: btn_tri_i[2]
+	Term: btn_tri_i[3]
+	Term: ja_pin1_i
+	Term: ja_pin2_i
+	Term: ja_pin3_i
+	Term: ja_pin4_i
+
+
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 20 sites.
+	Term: btn_tri_o[0]
+	Term: btn_tri_o[1]
+	Term: btn_tri_o[2]
+	Term: btn_tri_o[3]
+	Term: btn_tri_t[0]
+	Term: btn_tri_t[1]
+	Term: btn_tri_t[2]
+	Term: btn_tri_t[3]
+	Term: ja_pin10_o
+	Term: ja_pin10_t
+	Term: ja_pin1_o
+	Term: ja_pin2_o
+	Term: ja_pin3_o
+	Term: ja_pin4_o
+	Term: ja_pin7_o
+	Term: ja_pin7_t
+	Term: ja_pin8_o
+	Term: ja_pin8_t
+	Term: ja_pin9_o
+	Term: ja_pin9_t
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (28) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 8 sites.
+	Term: btn_tri_i[0]
+	Term: btn_tri_i[1]
+	Term: btn_tri_i[2]
+	Term: btn_tri_i[3]
+	Term: ja_pin1_i
+	Term: ja_pin2_i
+	Term: ja_pin3_i
+	Term: ja_pin4_i
+
+
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 20 sites.
+	Term: btn_tri_o[0]
+	Term: btn_tri_o[1]
+	Term: btn_tri_o[2]
+	Term: btn_tri_o[3]
+	Term: btn_tri_t[0]
+	Term: btn_tri_t[1]
+	Term: btn_tri_t[2]
+	Term: btn_tri_t[3]
+	Term: ja_pin10_o
+	Term: ja_pin10_t
+	Term: ja_pin1_o
+	Term: ja_pin2_o
+	Term: ja_pin3_o
+	Term: ja_pin4_o
+	Term: ja_pin7_o
+	Term: ja_pin7_t
+	Term: ja_pin8_o
+	Term: ja_pin8_t
+	Term: ja_pin9_o
+	Term: ja_pin9_t
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 14 |    50 |    10 | LVCMOS33(10)                                                           |                                          |        |  +3.30 |    YES |     |
+| 16 |    12 |     2 | LVCMOS33(2)                                                            |                                          |        |  +3.30 |    YES |     |
+| 34 |    24 |     4 | LVCMOS33(4)                                                            |                                          |        |  +3.30 |    YES |     |
+| 35 |    20 |     8 | LVCMOS33(8)                                                            |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   106 |    24 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 14     | led_16bits_tri_o[0]  | LVCMOS33        | IOB_X0Y3             | U16                  |                      |
+|        | led_16bits_tri_o[1]  | LVCMOS33        | IOB_X0Y43            | E19                  |                      |
+|        | led_16bits_tri_o[2]  | LVCMOS33        | IOB_X0Y20            | U19                  |                      |
+|        | led_16bits_tri_o[3]  | LVCMOS33        | IOB_X0Y19            | V19                  |                      |
+|        | led_16bits_tri_o[4]  | LVCMOS33        | IOB_X0Y18            | W18                  |                      |
+|        | led_16bits_tri_o[5]  | LVCMOS33        | IOB_X0Y4             | U15                  |                      |
+|        | led_16bits_tri_o[6]  | LVCMOS33        | IOB_X0Y0             | U14                  |                      |
+|        | led_16bits_tri_o[7]  | LVCMOS33        | IOB_X0Y1             | V14                  |                      |
+|        | led_16bits_tri_o[8]  | LVCMOS33        | IOB_X0Y2             | V13                  |                      |
+|        | reset                | LVCMOS33        | IOB_X0Y13            | U18                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 16     | usb_uart_rxd         | LVCMOS33        | IOB_X0Y112           | B18                  |                      |
+|        | usb_uart_txd         | LVCMOS33        | IOB_X0Y111           | A18                  | *                    |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | led_16bits_tri_o[10] | LVCMOS33        | IOB_X1Y37            | W3                   | *                    |
+|        | led_16bits_tri_o[11] | LVCMOS33        | IOB_X1Y32            | U3                   |                      |
+|        | led_16bits_tri_o[9]  | LVCMOS33        | IOB_X1Y38            | V3                   |                      |
+|        | sys_clock            | LVCMOS33        | IOB_X1Y26            | W5                   |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | ja_pin1_t            | LVCMOS33        | IOB_X1Y93            | J1                   |                      |
+|        | ja_pin2_t            | LVCMOS33        | IOB_X1Y89            | L2                   |                      |
+|        | ja_pin3_t            | LVCMOS33        | IOB_X1Y95            | J2                   |                      |
+|        | ja_pin4_t            | LVCMOS33        | IOB_X1Y97            | G2                   |                      |
+|        | led_16bits_tri_o[12] | LVCMOS33        | IOB_X1Y75            | P3                   |                      |
+|        | led_16bits_tri_o[13] | LVCMOS33        | IOB_X1Y76            | N3                   |                      |
+|        | led_16bits_tri_o[14] | LVCMOS33        | IOB_X1Y61            | P1                   | *                    |
+|        | led_16bits_tri_o[15] | LVCMOS33        | IOB_X1Y87            | L1                   | *                    |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1ad2bbdb0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.323 . Memory (MB): peak = 1885.418 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1ad2bbdb0
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.324 . Memory (MB): peak = 1885.418 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 1166dac0a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.325 . Memory (MB): peak = 1885.418 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+71 Infos, 30 Warnings, 34 Critical Warnings and 6 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 27 18:31:56 2021...

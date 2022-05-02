@@ -1,0 +1,263 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:14:06 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Sun Oct 10 19:17:48 2021
+# Process ID: 71008
+# Current directory: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.runs/synth_1
+# Command line: vivado.exe -log projectLab1b.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source projectLab1b.tcl
+# Log file: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.runs/synth_1/projectLab1b.vds
+# Journal file: C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source projectLab1b.tcl -notrace
+Command: synth_design -top projectLab1b -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 45356
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1027.789 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'projectLab1b' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:23]
+	Parameter N bound to: 16 - type: integer 
+	Parameter forward bound to: 0 - type: integer 
+	Parameter backward bound to: 1 - type: integer 
+	Parameter backwardFull bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sevenSeg' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/sevenSeg.v:23]
+	Parameter N bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sevenSeg' (1#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/sevenSeg.v:23]
+WARNING: [Synth 8-6090] variable 'tempWidthReverse' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:136]
+WARNING: [Synth 8-6090] variable 'input1reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:146]
+WARNING: [Synth 8-6090] variable 'input2reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:147]
+WARNING: [Synth 8-6090] variable 'widthEnA' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:148]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:116]
+WARNING: [Synth 8-6090] variable 'tempWidthReverse' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:174]
+WARNING: [Synth 8-6090] variable 'input4reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:184]
+WARNING: [Synth 8-6090] variable 'input3reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:185]
+WARNING: [Synth 8-6090] variable 'widthEnB' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:186]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:154]
+WARNING: [Synth 8-6090] variable 'input1reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:194]
+WARNING: [Synth 8-6090] variable 'input2reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:195]
+WARNING: [Synth 8-6090] variable 'input3reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:196]
+WARNING: [Synth 8-6090] variable 'input4reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:197]
+WARNING: [Synth 8-6090] variable 'widthEnA' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:198]
+WARNING: [Synth 8-6090] variable 'widthEnB' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:199]
+WARNING: [Synth 8-6090] variable 'tempWidthReverse' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:200]
+WARNING: [Synth 8-6090] variable 'input1reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:207]
+WARNING: [Synth 8-6090] variable 'input2reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:208]
+WARNING: [Synth 8-6090] variable 'input3reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:209]
+WARNING: [Synth 8-6090] variable 'input4reg' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:210]
+WARNING: [Synth 8-6090] variable 'widthEnA' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:211]
+WARNING: [Synth 8-6090] variable 'widthEnB' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:212]
+WARNING: [Synth 8-6090] variable 'tempWidthReverse' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:213]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v-23.7 with 1st driver pin 'projectLab1b:/mainSS/dp' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:23]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v-23.7 with 2nd driver pin 'VCC' [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:23]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v-23.7 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'projectLab1b' (2#1) [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/sources_1/new/forwardTape.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1027.789 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.789 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1027.789 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1027.789 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/constrs_1/new/forwardTape.xdc]
+Finished Parsing XDC File [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/constrs_1/new/forwardTape.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.srcs/constrs_1/new/forwardTape.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/projectLab1b_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/projectLab1b_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1080.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1080.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1080.113 ; gain = 52.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1080.113 ; gain = 52.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1080.113 ; gain = 52.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1080.113 ; gain = 52.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   21 Bit       Adders := 4     
+	   2 Input    7 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   21 Bit        Muxes := 37    
+	   4 Input   21 Bit        Muxes := 15    
+	   4 Input    7 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 7     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 32    
+	   4 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1080.113 ; gain = 52.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1080.113 ; gain = 52.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1127.848 ; gain = 100.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1135.367 ; gain = 107.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1135.367 ; gain = 107.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1135.367 ; gain = 107.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1135.367 ; gain = 107.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1135.367 ; gain = 107.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1135.367 ; gain = 107.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1135.367 ; gain = 107.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    31|
+|3     |LUT1   |    42|
+|4     |LUT2   |    24|
+|5     |LUT3   |    36|
+|6     |LUT4   |    75|
+|7     |LUT5   |    71|
+|8     |LUT6   |   164|
+|9     |FDRE   |   133|
+|10    |FDSE   |    25|
+|11    |IBUF   |     7|
+|12    |OBUF   |    18|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1135.367 ; gain = 107.578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1135.367 ; gain = 55.254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1135.367 ; gain = 107.578
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1140.211 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1140.219 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 22 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1140.219 ; gain = 112.430
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/steph/OneDrive/Desktop/School/ProjectLab1/forwardTape/forwardTape/forwardTape.runs/synth_1/projectLab1b.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file projectLab1b_utilization_synth.rpt -pb projectLab1b_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 10 19:18:28 2021...

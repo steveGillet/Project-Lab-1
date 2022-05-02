@@ -1,0 +1,15 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2.2 (win64) Build 3118627 Tue Feb  9 05:14:06 MST 2021
+| Date         : Fri Oct 15 11:42:53 2021
+| Host         : LAPTOP-1ENOPNGD running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file testIPI2_wrapper_bus_skew_routed.rpt -pb testIPI2_wrapper_bus_skew_routed.pb -rpx testIPI2_wrapper_bus_skew_routed.rpx
+| Design       : testIPI2_wrapper
+| Device       : 7a35ti-csg324
+| Speed File   : -1L  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+
